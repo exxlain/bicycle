@@ -1,4 +1,4 @@
-# project solarBoats 
+# project bicycle
 
 * developer: [Lana Kostina].
 
