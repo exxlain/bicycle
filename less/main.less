@@ -18,20 +18,26 @@
    color: @color;
    text-transform: @transform;
 }
-
 body {
 	font-family: "Lato", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 30px;
-	color: @grey;
+    .font-param(16px, 400, 30px, @grey, none);
 	background-color: @pale_pink;
 }
-
 img {
 	max-width: 100%;
 	height: auto;
 }
-
+a {
+    text-decoration: none;
+    .all-null();
+}
+ul {
+   list-style: none;
+   .all-null();
+}
+li, p {
+  .all-null();
+}
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -50,3 +56,41 @@ img {
    .all-null();
    .font-param(18px, 700, 18px, @dark-blue, uppercase);
 }
+.main-nav__list a {
+   .font-param(13px, 700, 13px, @dark-blue, uppercase);
+}
+.bicycle-info__descr {
+  .font-param(18px, 400, 34px, @grey, none);
+}
+.bicycle-examples-all--right__descr,
+.bicycle-examples-all--left__descr,
+.bicycle-examples-all--center__descr {
+  .font-param(16px, 400, 30px, @grey, none);
+}
+.quotes__quote-item-1__wrap cite{
+  .font-param(18px, 700, 18px, @dark-blue, none);
+}
+.quotes__quote-item-1 {
+  .font-param(24px, 400, 34px, @grey, none);
+  font-style: italic;
+}
+.shop-tools__button,
+.discover-shop__button {
+  .font-param(14px, 700, 14px, @white, uppercase);
+}
+.call-back__descr {
+  .font-param(24px, 400, 34px, @grey, none);
+  font-style: italic;
+}
+.email-form__button {
+  .font-param(24px, 300, 24px, @white, uppercase);
+}
+.page-footer__contact-header {
+  .font-param(16px, 700, 18px, @grey, none);
+}
+.page-footer__contact-text {
+  .font-param(14px, 400, 18px, @grey, none);
+  font-style: italic;
+}
+
+
