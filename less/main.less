@@ -1,10 +1,52 @@
-    .visually-hidden {
-        position: absolute;
-        clip: rect(0 0 0 0);
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        overflow: hidden;
-    }
+@pale_pink: #f7f7f7;
+@white: #fff;
+@dark-blue: #4d4959;
+@black: #000;
+@grey: #848789;
+
+
+@import "import/fonts.less";
+
+.all-null() {
+    margin: 0;
+    padding: 0;
+}
+.font-param(@font-size, @font-weight, @line-height, @color, @transform) {
+   font-size: @font-size;
+   font-weight: @font-weight;
+   line-height: @line-height;
+   color: @color;
+   text-transform: @transform;
+}
+
+body {
+	font-family: "Lato", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	color: @grey;
+	background-color: @pale_pink;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.bicycle-info__header,
+.bicycle-examples-all--right__header,
+.bicycle-examples-all--left__header,
+.bicycle-examples-all--center__header {
+   .all-null();
+   .font-param(18px, 700, 18px, @dark-blue, uppercase);
+}
