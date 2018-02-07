@@ -67,6 +67,7 @@ li, p {
     .all-null();
     .font-param(18px,700,18px,@dark-blue,uppercase);
     letter-spacing: 3.6px;
+    position: relative;
 }
 .logo-wrap-param () {
     position: absolute;
@@ -109,6 +110,54 @@ li, p {
         }
     }
 }
+.bicycle-info-icon-param () {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        background-repeat: no-repeat;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+
+  .bicycle-info__header::before {
+  .bicycle-info-icon-param;
+  background-image: url("../img/icon/about-us.png");
+  bottom: 50px;
+  height: 43px;
+  width: 52px;
+  }
+.bicycle-examples-all--right__header::before {
+  .bicycle-info-icon-param;
+  background-image: url("../img/icon/work-bike-1-logo.jpg.png");
+  bottom: 50px;
+  height: 30px;
+  width: 41px;
+    @media (max-width:1600px) {
+          display: none;
+        }
+}
+.bicycle-examples-all--left__header::before {
+  .bicycle-info-icon-param;
+  background-image: url("../img/icon/work-bike-2-logo.jpg.png");
+  bottom: 50px;
+  height: 32px;
+  width: 32px;
+    @media (max-width:1600px) {
+          display: none;
+        }
+}
+.bicycle-examples-all--center__header::before {
+  .bicycle-info-icon-param;
+  background-image: url("../img/icon/work-bike-3-logo.jpg.png");
+  bottom: 45px;
+  height: 41px;
+  width: 23px;
+    @media (max-width:1600px) {
+          display: none;
+        }
+}
+
 .bicycle-info__wrap {
     text-align: center;
     padding: 192px 15.6% 133px;
@@ -132,7 +181,6 @@ li, p {
     box-sizing: border-box;
     width: 33.33%;
     text-align: center;
-    padding-top: 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -153,14 +201,15 @@ li, p {
     }
     &_wrap {
         .bicycle-examples-wrap-param();
-        margin-left: auto;
+         padding-top: 130px;
+         margin-left: auto;
     }
     &__descr {
-        margin-bottom: 45px;
+        margin-bottom: 35px;
     }
     &__hr {
         width: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 }
 .bicycle-examples-all--left {
@@ -171,14 +220,15 @@ li, p {
     }
     &_wrap {
         .bicycle-examples-wrap-param();
-        margin-right: auto;
+         padding-top: 123px;
+      margin-right: auto;
     }
     &__descr {
-        margin-bottom: 45px;
+        margin-bottom: 34px;
     }
     &__hr {
         width: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 58px;
     }
 }
 .bicycle-examples-all--center {
@@ -187,25 +237,26 @@ li, p {
     background-repeat: no-repeat,no-repeat;
     background-position: left top,right top;
     width: 100%;
-    background-size: 33.33%,33.33%;
+    background-size: 33.4%,33.4%;
     @media (max-width:1200px) {
         background: @white;
     }
     &_wrap {
         .bicycle-examples-wrap-param();
         margin: 0 auto;
+        padding-top: 123px;
     }
     &__descr {
-        margin-bottom: 45px;
+        margin-bottom: 33px;
     }
     &__hr {
         width: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 }
 .quotes {
     text-align: center;
-    padding: 180px 15.6% 160px;
+    padding: 180px 15.6% 157px;
     &__quote-item-1__wrap cite {
         .font-param(18px,700,18px,@dark-blue,none);
     }
@@ -247,7 +298,7 @@ li, p {
     .shop-tools-wraps-param;
     background-image: url(../img/jpg/shop-right-1.jpg),url(../img/jpg/shop-right-2.jpg),url(../img/jpg/shop-right-3.jpg);
     background-position: left top,left bottom,right bottom;
-    display: flex;
+
     @media (max-width:768px) {
         width: 50%;
     }
@@ -255,14 +306,41 @@ li, p {
         width: 100%;
     }
 }
+
+.shop-tools__button-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 269px;
+  margin-top: 4%;
+}
+
 .shop-button-param () {
     .font-param(14px,700,14px,@white,uppercase);
     letter-spacing: 2.8px;
 }
 .shop-tools__button {
     .shop-button-param;
-    margin: 28% auto;
+
+    position: relative;
 }
+
+.shop-tools__button::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        background-repeat: no-repeat;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/icon/bicycle.png");
+        top: -40px;
+        height: 30px;
+        width: 51px;
+  }
+
+
+
 .discover-shop__wrap {
     min-height: 200px;
     background-color: @dark-grey;
@@ -323,10 +401,10 @@ li, p {
 }
 .page-footer__wrap {
     display: flex;
-    padding: 90px 15.5%;
+    padding: 94px 15.5%;
     align-items: center;
     @media (max-width:768px) {
-        padding: 90px 5%;
+        padding: 94px 5%;
     }
 }
 .page-footer__contacts {
