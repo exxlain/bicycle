@@ -79,7 +79,40 @@ li, p {
     .logo-wrap-param;
     top: 34px;
 }
+
 .main-nav__list {
+    display: flex;
+    padding: 3.7% 0 0 0;
+    margin: 0 30.5%;
+    justify-content: space-between;
+    @media (min-width:480px) and (max-width:1200px) {
+        margin: 0 10%;
+    }
+    @media (max-width:480px) {
+        display: block;
+        margin: 0;
+        padding: 4%;
+    }
+    li {
+        flex-grow: 1;
+    }
+    li:nth-child(3) {
+        padding-right: 29%;
+    }
+    a {
+        .font-param(13px,700,13px,@dark-blue,uppercase);
+        letter-spacing: 2.6px;
+    }
+}
+@media (max-width:480px) {
+    .main-nav__list {
+        li:nth-child(2), li:nth-child(5) {
+            display: none;
+        }
+    }
+}
+
+/*.main-nav__list {
     display: flex;
     padding: 3.7% 0 0 0;
     margin: 0 27%;
@@ -109,7 +142,9 @@ li, p {
             display: none;
         }
     }
-}
+}*/
+
+
 .bicycle-info-icon-param () {
         content: "";
         position: absolute;
